@@ -31,5 +31,4 @@ stages:
       inputs:
         containerRegistry: 'DockerHub'
         repository: 'ajaythota9/hwdockersample'
-        command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        command: 'push'
