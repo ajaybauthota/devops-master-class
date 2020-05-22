@@ -34,4 +34,6 @@ stages:
         repository: 'ajaythota9/hwdockersample'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
+        tags: |
+          $(tag)
 
