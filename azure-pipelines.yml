@@ -27,8 +27,11 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/projects/hello-world/hello-world-java/Dockerfile'
         tags: |
           $(tag)
+    
     - task: Docker@2
       inputs:
         containerRegistry: 'DockerHub'
         repository: 'ajaythota9/hwdockersample'
-        command: 'push'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
+
